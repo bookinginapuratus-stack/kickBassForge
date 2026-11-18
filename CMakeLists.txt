@@ -16,7 +16,7 @@ juce_add_plugin(KickBassForge
     PRODUCT_NAME "KickBassForge")
 
 target_sources(KickBassForge PRIVATE
-    Source/PluginProcessor.cpp Source/PluginEditor.cpp)
+ PluginProcessor.cpp PluginEditor.cpp)
 target_compile_definitions(KickBassForge PUBLIC
     JUCE_WEB_BROWSER=0 JUCE_USE_CURL=0 JUCE_VST3_CAN_REPLACE_VST2=0)
 target_link_libraries(KickBassForge
